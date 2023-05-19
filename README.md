@@ -1,8 +1,4 @@
-<div style="display: flex; gap: 20px; align-items: center;">
-<img height="100" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_170805.png" />
-<img height="100" src="https://mui.com/static/logo.png" />
-<img height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" />
-</div>
+[![My Skills](https://skills.thijs.gg/icons?i=react,materialui,typescript,css,html)](https://skills.thijs.gg)
 
 # Challenge
 
