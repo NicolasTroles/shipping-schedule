@@ -22,8 +22,6 @@ import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { DashboardPage } from "./pages/DashboardPage";
 import { ShipmentsPage } from "./pages/ShipmentsPage";
-import { Box } from "@material-ui/core";
-import Loader from "react-loader-spinner";
 
 const theme = createTheme({
   palette: {
@@ -79,11 +77,7 @@ export const App = () => {
       );
       break;
     case "LOADING":
-      component = (
-        <Box className={classes.loader}>
-          <Loader type="Grid" color={theme.palette.primary.main} />
-        </Box>
-      );
+      component = <>Is loading</>;
       break;
     case "ERROR":
       component = <p>Error</p>;
@@ -93,8 +87,10 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Navbar />
-        {component}
+        <>
+          <Navbar />
+          {component}
+        </>
       </Router>
     </ThemeProvider>
   );

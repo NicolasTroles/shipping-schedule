@@ -33,17 +33,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <Toolbar id="header">
-      <Link to={AppRoute.DASHBOARD} className={classes.logoLink}>
-        <img
-          alt="Logixboard Logo"
-          src={logo}
-          style={{
-            height: "100%",
-            maxWidth: 145,
-            objectFit: "contain",
-          }}
-        />
-      </Link>
+      <Link to={AppRoute.DASHBOARD} className={classes.logoLink}></Link>
       <Tabs value={tabIndex} indicatorColor="primary">
         {NAV_TABS.map((tab, index) => (
           <Tab
